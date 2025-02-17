@@ -1,0 +1,44 @@
+.header {
+  width: 100%;
+  position: relative;
+  padding-top: 22px;
+  overflow: hidden;
+
+  ::after {
+    content: '';
+    position: absolute;
+    top: -520%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2880px;
+    aspect-ratio: 1;
+    border: 1px solid var(--color-dark);
+    border-radius: 50%;
+    background-color: var(--color-accent);
+    z-index: -1;
+  }
+
+  &__logo {
+    display: block;
+    margin: 0 auto 24px;
+    width: 153px;
+    height: 34px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 60px;
+  }
+
+  &__title {
+    display: block;
+    line-height: 120%;
+    max-width: 437px;
+    font-size: 50px;
+    font-weight: 800;
+    color: var(--color-white);
+    margin-bottom: 52px;
+  }
+}

@@ -1,0 +1,39 @@
+.header {
+  width: 100%;
+  height: 466px;
+  position: relative;
+  padding-top: 22px;
+  overflow: hidden;
+}
+
+.header__title span {
+  color: var(--color-orange-alt);
+}
+
+.header__text {
+  color: var(--color-white);
+}
+
+@media (max-width: 887px) {
+  .header {
+    height: 400px;
+  }
+
+  .header::after {
+    top: -620%;
+  }
+
+  .header__image {
+    width: 270px;
+    height: 270px;
+  }
+
+  .header__title {
+    font-size: 45px;
+    margin-bottom: 40px;
+  }
+
+  .header__text p {
+    font-size: 14px;
+  }
+}
