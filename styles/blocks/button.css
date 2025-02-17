@@ -1,0 +1,36 @@
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	border-radius: 12px;
+	padding: 11px 0;
+}
+
+.button_light {
+	width: 100%;
+	background-color: var(--color-light-alt);
+}
+
+.button_section {
+	width: 268px;
+	height: 40px;
+	margin-inline: auto;
+	color: var(--color-white);
+	background-color: var(--color-orange);
+}
+
+@media (hover: hover) {
+	.button_light:hover,
+	.button_section:hover {
+		background-color: var(--color-accent);
+		color: var(--color-white);
+	}
+}
+
+@media (hover: none) {
+	.button_light:active,
+	.button_section:active {
+		background-color: var(--color-accent-alt);
+	}
+}
