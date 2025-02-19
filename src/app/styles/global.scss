@@ -1,5 +1,54 @@
+@use "helpers" as *;
+
+// блокируем скролл при отрытии мобильного меню
+html {
+  .is-lock {
+    overflow: hidden;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbarBg);
+    border-radius: var(--scrollbarWidth);
+  }
+}
+
 body {
-  font-family: Nunito, sans-serif;
+  @include fluid-text(16, 12);
+
+  font-family: var(--font-family-base);
   color: var(--color-black);
   background-color: var(--color-light);
+
+  &::-webkit-scrollbar {
+    width: var(--scrollbarWidth);
+  }
+}
+
+a,
+button,
+label,
+textarea,
+input,
+select,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+a {
+  color: inherit;
+
+  // сбрасываем подчёркивание только ссылок, у которых есть класс
+  &[class] {
+    text-decoration: none;
+  }
+}
+
+
+.content {
+  display: flex;
+  flex-direction: column;
+
+  & main {
+    flex-grow: 1;
+  }
 }

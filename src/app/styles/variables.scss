@@ -9,8 +9,16 @@
   --color-accent-alt: #f86310;
   --color-gray: #b1b1b1;
 
+  --font-family-base: Nunito, sans-serif;
+
   --container-width: 1300px;
   --container-padding-x: 15px;
 
   --transition-duration: 0.2s;
+
+  --scrollbarBg: var(--color-orange);
+  // --scrollbarThumb: ;
+  --scrollbarWidth: 10px;
+  // --scrollbarBorder: 3px solid var(--scrollbarBg);
+  --scrollbarBorderRadius: calc(var(--scrollbarWidth) / 2);
 }
