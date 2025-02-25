@@ -1,0 +1,94 @@
+.footer {
+  padding-top: fluid(50, 25);
+  padding-bottom: fluid(40, 26);
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+  }
+
+  &__top {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: fluid(36, 24);
+
+    @include mobile {
+      flex-direction: column;
+      row-gap: 24px;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    column-gap: fluid(126, 85);
+
+    @include mobile-xs {
+      flex-direction: column;
+      row-gap: 24px;
+    }
+  }
+
+  &__image {
+    object-fit: contain;
+  }
+
+  &__soc1als,
+  &__phone {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: fluid(22, 8);
+  }
+
+  &__phone-link {
+    font-size: fluid(16, 12);
+    position: relative;
+    translate: 20%;
+
+    &::before {
+      content: '';
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      top: 0;
+      left: -30px;
+      background: url('../../../shared/assets/icons/call.svg') center / cover
+        no-repeat;
+    }
+  }
+
+  &__soc1al-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 16px;
+  }
+
+  &__soc1al-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: var(--color-orange);
+    border-radius: 50%;
+
+    @include hover {
+      background-color: var(--color-accent);
+    }
+  }
+
+  &__soc1al-image {
+    width: 60%;
+  }
+
+  &__copy {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    font-size: 12px;
+  }
+}
