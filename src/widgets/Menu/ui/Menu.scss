@@ -1,3 +1,14 @@
 .menu {
-  grid-area: menu;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+
+    @include laptop-s {
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      row-gap: 30px;
+    }
+  }
 }

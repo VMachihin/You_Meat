@@ -7,7 +7,7 @@ $container-laptop-width: 960;
   $maxViewportWidth: $container-desktop-width;
   $minViewportWidth: 320;
 
-  @if($isEndOfLaptop) {
+  @if ($isEndOfLaptop) {
     $minViewportWidth: $container-laptop-width;
   }
 
@@ -19,9 +19,11 @@ $container-laptop-width: 960;
   $slope: math.div(($maxSize - $minSize), ($maxWidth - $minWidth));
   $yAxisIntersections: -$minWidth * $slope + $minSize;
 
-  @return clamp(#{$minSize * 1rem},
+  @return clamp(
+    #{$minSize * 1rem},
     #{$yAxisIntersections * 1rem} + #{$slope * 100vw},
-    #{$maxSize * 1rem});
+    #{$maxSize * 1rem}
+  );
 }
 
 @function fluid-to-laptop($max: 100, $min: 10) {
