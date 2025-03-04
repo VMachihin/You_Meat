@@ -1,38 +1,38 @@
 export const menuItems = [
   {
     title: 'Бургеры',
-    iconSrc: 'burger',
+    iconSrc: 'src/shared/assets/icons/burger.svg',
   },
   {
     title: 'Закуски',
-    iconSrc: 'snacks',
+    iconSrc: 'src/shared/assets/icons/snacks.svg',
   },
   {
     title: 'Хот-доги',
-    iconSrc: 'hotdog',
+    iconSrc: 'src/shared/assets/icons/hotdog.svg',
   },
   {
     title: 'Комбо',
-    iconSrc: 'combo',
+    iconSrc: 'src/shared/assets/icons/combo.svg',
   },
   {
     title: 'Шаурма',
-    iconSrc: 'shawarma',
+    iconSrc: 'src/shared/assets/icons/shawarma.svg',
   },
   {
     title: 'Пицца',
-    iconSrc: 'pizza',
+    iconSrc: 'src/shared/assets/icons/pizza.svg',
   },
   {
     title: 'Вок',
-    iconSrc: 'bok',
+    iconSrc: 'src/shared/assets/icons/bok.svg',
   },
   {
     title: 'Десерты',
-    iconSrc: 'doughnut',
+    iconSrc: 'src/shared/assets/icons/doughnut.svg',
   },
   {
     title: 'Соусы',
-    iconSrc: 'sauces',
+    iconSrc: 'src/shared/assets/icons/sauces.svg',
   },
 ];

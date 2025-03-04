@@ -1,6 +1,7 @@
 .footer {
   padding-top: fluid(50, 25);
   padding-bottom: fluid(40, 26);
+  background-color: var(--color-white);
 
   &__inner {
     display: flex;

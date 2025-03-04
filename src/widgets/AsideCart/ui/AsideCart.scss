@@ -1,3 +1,48 @@
 .aside-cart {
-  grid-area: asideCart;
+  flex-shrink: 0;
+  align-self: start;
+  position: sticky;
+  top: 20px;
+  background-color: var(--color-white);
+  width: 300px;
+  padding: 26px 16px;
+  border-radius: 18px;
+
+  @include laptop-s {
+    width: 145px;
+    height: 48px;
+    padding: 16px 10px;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: fluid-text(24, 16);
+    font-weight: 600;
+
+    @include laptop-s {
+      font-size: 16px;
+    }
+  }
+
+  &__info {
+    @include laptop-s {
+      display: none;
+    }
+  }
+
+  &__counter {
+    font-size: 14px;
+    width: fluid(41, 32);
+    height: fluid(20, 16);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-light-alt);
+    border-radius: 6px;
+  }
 }

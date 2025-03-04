@@ -3,20 +3,27 @@ import { Icon } from '@/shared/ui/Icon';
 import { soc1alLinks } from '../lib/soc1alLinks';
 
 import './Footer.scss';
+import { NavLink } from 'react-router';
 
 export const Footer = () => {
   return (
     <footer className='footer'>
       <div className='footer__inner container'>
         <div className='footer__top'>
-          <a
-            href='/'
+          <NavLink
+            to='/'
             aria-label='Главная'
             title='Главная'
             rel='noreferrer'
             className='footer__logo'
           >
-            <Icon iconId='footer-logo' className='footer__icon' />
+            <img
+              src={FooterLogoIcon}
+              alt='главный логотип'
+              width={300}
+              height={58}
+              className='footer__image'
+            />
           </a>
 
           <div className='footer__contacts'>

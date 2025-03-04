@@ -1,11 +1,11 @@
-import { HomePage } from '@/pages/HomePage';
+import { AppRouter } from './providers/Router';
 
 import './styles/index.scss';
 
 export const App = () => {
   return (
     <>
-      <HomePage />
+      <AppRouter />
     </>
   );
 };
