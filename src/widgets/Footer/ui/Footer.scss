@@ -31,8 +31,10 @@
     }
   }
 
-  &__image {
-    object-fit: contain;
+  &__icon {
+    width: fluid(300, 196);
+    height: fluid(58, 38);
+    color: var(--color-orange);
   }
 
   &__soc1als,
@@ -81,7 +83,8 @@
     }
   }
 
-  &__soc1al-image {
+  &__soc1al-icon {
+    color: var(--color-white);
     width: 60%;
   }
 

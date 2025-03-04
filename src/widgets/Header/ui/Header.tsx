@@ -1,15 +1,11 @@
+import { Icon } from '@/shared/ui/Icon';
 import './Header.scss';
 
 export const Header = () => {
   return (
     <header className='header'>
       <a href='/' aria-label='Главная' title='Главная' className='header__logo'>
-        <img
-          src='src/shared/assets/icons/logo.svg'
-          alt=''
-          width={150}
-          height={29}
-        />
+        <Icon iconId='logo' className='header__logo' />
       </a>
       <div className='header__inner container'>
         <img

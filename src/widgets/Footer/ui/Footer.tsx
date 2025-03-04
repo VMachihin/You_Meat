@@ -1,4 +1,5 @@
-import FooterLogoIcon from '@/shared/assets/icons/footer-logo.svg';
+import { Icon } from '@/shared/ui/Icon';
+
 import { soc1alLinks } from '../lib/soc1alLinks';
 
 import './Footer.scss';
@@ -15,13 +16,7 @@ export const Footer = () => {
             rel='noreferrer'
             className='footer__logo'
           >
-            <img
-              src={FooterLogoIcon}
-              alt='главный логотип'
-              width={300}
-              height={58}
-              className='footer__image'
-            />
+            <Icon iconId='footer-logo' className='footer__icon' />
           </a>
 
           <div className='footer__contacts'>
@@ -42,10 +37,9 @@ export const Footer = () => {
                       aria-label={soc1alLink.title}
                       title={soc1alLink.title}
                     >
-                      <img
-                        src={soc1alLink.imgSrc}
-                        alt=''
-                        className='footer__soc1al-image'
+                      <Icon
+                        iconId={soc1alLink.imgSrc}
+                        className='footer__soc1al-icon'
                       />
                     </a>
                   </li>
