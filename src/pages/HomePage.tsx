@@ -1,6 +1,8 @@
+import { Outlet } from 'react-router';
+
 import { Header } from '@/widgets/Header';
 import { Navigation } from '@/widgets/Navigation';
-import { Menu } from '@/widgets/Menu';
+import { AsideCart } from '@/widgets/AsideCart';
 import { Footer } from '@/widgets/Footer';
 
 export const HomePage = () => {
@@ -9,7 +11,8 @@ export const HomePage = () => {
       <Header />
       <Navigation />
       <main>
-        <Menu />
+        <AsideCart />
+        <Outlet />
       </main>
       <Footer />
     </div>

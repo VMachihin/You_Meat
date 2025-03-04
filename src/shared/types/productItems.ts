@@ -5,3 +5,11 @@ export type ProductItemsType = {
   price: string;
   weight: string;
 };
+
+export type ProductsCatalogType = [
+  {
+    catalogId: '1';
+    catalogTitle: string;
+    catalogItems: ProductItemsType[];
+  }
+];

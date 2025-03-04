@@ -2,14 +2,15 @@ import FooterLogoIcon from '@/shared/assets/icons/footer-logo.svg';
 import { soc1alLinks } from '../lib/soc1alLinks';
 
 import './Footer.scss';
+import { NavLink } from 'react-router';
 
 export const Footer = () => {
   return (
     <footer className='footer'>
       <div className='footer__inner container'>
         <div className='footer__top'>
-          <a
-            href='/'
+          <NavLink
+            to='/'
             aria-label='Главная'
             title='Главная'
             rel='noreferrer'
@@ -22,7 +23,7 @@ export const Footer = () => {
               height={58}
               className='footer__image'
             />
-          </a>
+          </NavLink>
 
           <div className='footer__contacts'>
             <div className='footer__phone'>

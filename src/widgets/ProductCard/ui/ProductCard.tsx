@@ -30,7 +30,12 @@ export const ProductCard = (props: ProductItemsType) => {
           <span className='product-card__weight'>{weight}г</span>
         </div>
       </a>
-      <button className='product-card__button'>Добавить</button>
+      <button
+        className='product-card__button'
+        onClick={() => console.log('click')}
+      >
+        Добавить
+      </button>
     </li>
   );
 };

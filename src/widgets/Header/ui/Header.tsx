@@ -1,16 +1,24 @@
+import { NavLink } from 'react-router';
+
 import './Header.scss';
 
 export const Header = () => {
   return (
     <header className='header'>
-      <a href='/' aria-label='Главная' title='Главная' className='header__logo'>
+      <NavLink
+        to='/'
+        aria-label='Главная'
+        title='Главная'
+        className='header__logo'
+      >
         <img
           src='src/shared/assets/icons/logo.svg'
           alt=''
           width={150}
           height={29}
         />
-      </a>
+      </NavLink>
+
       <div className='header__inner container'>
         <img
           src='src/shared/assets/images/main-burger.png'
