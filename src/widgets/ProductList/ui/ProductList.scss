@@ -1,5 +1,11 @@
-.product__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: fluid(30, 10);
+.product {
+  &__title {
+    margin-bottom: fluid(24, 16);
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: fluid(30, 10);
+  }
 }

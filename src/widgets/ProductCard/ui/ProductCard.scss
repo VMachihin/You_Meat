@@ -4,6 +4,7 @@
   padding: fluid(12, 4);
   border-radius: fluid(18, 12);
   transition-duration: var(--transition-duration-longer);
+  cursor: pointer;
 
   @include hover {
     translate: 0 -5px;
@@ -30,14 +31,11 @@
   }
 
   &__title {
-    // margin-bottom: fluid(7, 4);
-  }
-
-  &__price {
     margin-bottom: fluid(30, 20);
   }
 
   &__weight {
+    display: inline-block;
     color: var(--color-gray);
     margin-bottom: 10px;
   }
@@ -51,5 +49,10 @@
     border: none;
     border-radius: fluid(12, 8);
     padding-block: fluid(12, 9);
+    background-color: var(--color-light-alt);
+
+    @include hover {
+      background-color: var(--color-accent);
+    }
   }
 }

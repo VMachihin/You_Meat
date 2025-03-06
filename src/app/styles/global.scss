@@ -1,11 +1,6 @@
 @use 'helpers' as *;
 
-// блокируем скролл при отрытии мобильного меню
 html {
-  .is-lock {
-    overflow: hidden;
-  }
-
   ::-webkit-scrollbar-thumb {
     background-color: var(--scrollbarBg);
     border-radius: var(--scrollbarWidth);
@@ -21,6 +16,10 @@ body {
 
   &::-webkit-scrollbar {
     width: var(--scrollbarWidth);
+  }
+
+  &.is-lock {
+    overflow: hidden;
   }
 }
 

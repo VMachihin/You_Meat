@@ -1,21 +1,26 @@
+import { useLocation } from 'react-router';
+
 import { ProductCard } from '@/widgets/ProductCard';
 import { productsCatalog } from '@/shared/mock/productItems';
 
 import './ProductList.scss';
-import { useLocation } from 'react-router';
 
 export const ProductList = () => {
-  const location = useLocation();
+  const location = useLocation().pathname.substring(1);
+
+  const currentProductsCatalog = productsCatalog.find(
+    (el) => el.catalogId === location
+  );
+
   return (
-    <ul className='product__list'>
-      {productsCatalog.map((productItem) => (
-        <>
-          <h2 key={productItem.catalogId}>{productItem.catalogTitle}</h2>
-          {productItem.catalogItems.map((item) => (
-            <ProductCard {...item} key={item.id} />
-          ))}
-        </>
-      ))}
-    </ul>
+    <div className='product__inner' key={currentProductsCatalog?.catalogId}>
+      <h2 className='product__title'>{currentProductsCatalog?.catalogTitle}</h2>
+
+      <ul className='product__list'>
+        {currentProductsCatalog?.catalogItems.map((productItem) => (
+          <ProductCard {...productItem} key={productItem.id} />
+        ))}
+      </ul>
+    </div>
   );
 };

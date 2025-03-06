@@ -1,9 +1,8 @@
+import { NavLink } from 'react-router';
 import { Icon } from '@/shared/ui/Icon';
-
 import { soc1alLinks } from '../lib/soc1alLinks';
 
 import './Footer.scss';
-import { NavLink } from 'react-router';
 
 export const Footer = () => {
   return (
@@ -17,14 +16,8 @@ export const Footer = () => {
             rel='noreferrer'
             className='footer__logo'
           >
-            <img
-              src={FooterLogoIcon}
-              alt='главный логотип'
-              width={300}
-              height={58}
-              className='footer__image'
-            />
-          </a>
+            <Icon iconId='footer-logo' className='footer__icon-logo' />
+          </NavLink>
 
           <div className='footer__contacts'>
             <div className='footer__phone'>

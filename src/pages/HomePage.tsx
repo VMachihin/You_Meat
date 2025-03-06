@@ -2,8 +2,8 @@ import { Outlet } from 'react-router';
 
 import { Header } from '@/widgets/Header';
 import { Navigation } from '@/widgets/Navigation';
-import { AsideCart } from '@/widgets/AsideCart';
 import { Footer } from '@/widgets/Footer';
+import { Modal } from '@/shared/ui/Modal';
 
 export const HomePage = () => {
   return (
@@ -11,10 +11,13 @@ export const HomePage = () => {
       <Header />
       <Navigation />
       <main>
-        <AsideCart />
         <Outlet />
       </main>
       <Footer />
+
+      <Modal>
+        Тут должен быть контент карточки продукта, на который мы кликнули
+      </Modal>
     </div>
   );
 };

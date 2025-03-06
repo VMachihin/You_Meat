@@ -8,7 +8,17 @@ export type ProductItemsType = {
 
 export type ProductsCatalogType = [
   {
-    catalogId: '1';
+    catalogId: string;
+    catalogTitle: string;
+    catalogItems: ProductItemsType[];
+  },
+  {
+    catalogId: string;
+    catalogTitle: string;
+    catalogItems: ProductItemsType[];
+  },
+  {
+    catalogId: string;
     catalogTitle: string;
     catalogItems: ProductItemsType[];
   }

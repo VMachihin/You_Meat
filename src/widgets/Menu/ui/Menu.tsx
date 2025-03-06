@@ -1,5 +1,5 @@
-import { AsideCart } from '@/widgets/AsideCart';
 import { ProductList } from '@/widgets/ProductList';
+import { AsideCart } from '@/widgets/AsideCart';
 
 import './Menu.scss';
 

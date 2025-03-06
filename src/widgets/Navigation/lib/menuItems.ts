@@ -1,38 +1,47 @@
 export const menuItems = [
   {
     title: 'Бургеры',
-    iconSrc: 'src/shared/assets/icons/burger.svg',
+    routeName: 'burgers',
+    iconSrc: 'burger',
   },
   {
     title: 'Закуски',
-    iconSrc: 'src/shared/assets/icons/snacks.svg',
+    routeName: 'snacks',
+    iconSrc: 'snacks',
   },
   {
     title: 'Хот-доги',
-    iconSrc: 'src/shared/assets/icons/hotdog.svg',
+    routeName: 'hotdogs',
+    iconSrc: 'hotdog',
   },
   {
     title: 'Комбо',
-    iconSrc: 'src/shared/assets/icons/combo.svg',
+    routeName: 'combos',
+    iconSrc: 'combo',
   },
   {
     title: 'Шаурма',
-    iconSrc: 'src/shared/assets/icons/shawarma.svg',
+    routeName: 'shawarmas',
+    iconSrc: 'shawarma',
   },
   {
     title: 'Пицца',
-    iconSrc: 'src/shared/assets/icons/pizza.svg',
+    routeName: 'pizzas',
+    iconSrc: 'pizza',
   },
   {
     title: 'Вок',
-    iconSrc: 'src/shared/assets/icons/bok.svg',
+    routeName: 'boks',
+    iconSrc: 'bok',
   },
   {
     title: 'Десерты',
-    iconSrc: 'src/shared/assets/icons/doughnut.svg',
+    routeName: 'doughnuts',
+    iconSrc: 'doughnut',
   },
   {
     title: 'Соусы',
-    iconSrc: 'src/shared/assets/icons/sauces.svg',
+    routeName: 'sauces',
+    iconSrc: 'sauces',
   },
 ];
