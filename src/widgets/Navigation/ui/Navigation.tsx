@@ -21,6 +21,7 @@ export const Navigation = () => {
                     aria-label={menuItems.title}
                     title={menuItems.title}
                     className='nav__link'
+                    onClick={() => console.log(menuItems.routeName)}
                   >
                     <Icon
                       iconId={menuItems.iconSrc}
